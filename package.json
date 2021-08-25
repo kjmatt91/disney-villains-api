@@ -1,0 +1,24 @@
+{
+  "name": "disney-villains-api",
+  "version": "1.0.0",
+  "description": "In this two part exercise you are tasked with create a REST API for accessing Disney Villain data, complete with test suite.",
+  "main": ".eslintrc.js",
+  "dependencies": {
+    "mysql2": "^2.3.0",
+    "sequelize": "^6.6.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kjmatt91/disney-villains-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kjmatt91/disney-villains-api/issues"
+  },
+  "homepage": "https://github.com/kjmatt91/disney-villains-api#readme"
+}
