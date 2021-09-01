@@ -17,17 +17,17 @@ const getVillainBySlug = async (request, response) => {
 }
 
 const saveNewVillain = async (request, response) => {
-  const { name, realname, firstappearance, slug } = request.body
+  const { name, movie, slug } = request.body
 
-  if (!name || !realname || !firstappearance || !slug) {
-    return response.status(400).send('The following fields are reauired: name, realname, firstappearnace, slug')
+  if (!name || !movie || !slug) {
+    return response.status(400).send('The following fields are required: name, movie, slug')
   }
 
   const newVillain = await models.villains.create({
-    name, realname, firstappearance, slug
+    name, movie, slug
   })
 
-  return response.status(201).send(newVillain, 'createdAt', 'updatedAt')
+  return response.status(201).send(newVillain)
 }
 
 module.exports = { getAllVillains, getVillainBySlug, saveNewVillain }
